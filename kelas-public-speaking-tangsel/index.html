@@ -676,56 +676,55 @@
     </section><!-- /About Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section class="section bg-light pricing" id="pricing">
+    <section class="section bg-light pricing custom-pricing" id="pricing">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4">
-            <div class="heading-box">
+            <div class="heading-box" data-aos="fade-right">
               <div class="title-box">
                 <h6 class="title-sub-title mb-0 text-primary">Pricing</h6>
                 <h3 class="title-heading mt-3 ms-0">Harga Kelas First Class</h3>
               </div>
 
-              <p class="title-desc text-muted mt-3">Program first class berjalan selama 10x pertemuan dengan garansi
-                mengulang baik kelas private ataupun umum.</p>
+              <p class="title-desc text-muted mt-3">Saran kami ambil program First Class hanya tersedia di
+                beberapa kota
+                diharuskan untuk berbicara secara professional dihadapan orang-orang penting.</p>
 
-              <div class="pricing-tabs mt-4">
-                <ul class="nav nav-pills rounded justify-content-center d-inline-block pricing-tab-border py-1 px-2"
+              <!-- Untuk script ganti pricing box berada di assets/part/pricing/switch-price.js -->
+              <div class="pricing-tabs my-4 mb-xl-0 custom-pricing">
+                <ul class="nav nav-pills rounded justify-content-center d-inline-block my-1 flex-nowrap flex gap-2"
                   id="pills-tab" role="tablist">
-                  <!-- <li class="nav-item d-inline-block">
-                    <a class="nav-link px-3 rounded active jogja" id="jogja" data-bs-toggle="pill" href="#jogjas"
-                      role="tab" aria-controls="jogjas" aria-selected="true">Yogyakarta</a>
-                  </li> -->
                   <li class="nav-item d-inline-block">
-                    <a class="nav-link px-3 rounded tangsel active" id="tangsel" data-bs-toggle="pill" href="#tangsels"
-                      role="tab" aria-controls="Year" aria-selected="false">
-                      Tangerang Selatan
-                    </a>
+                    <button type="button" class="nav-link px-3 rounded custom-price-button active" role="tab"
+                      data-target="first-class-jogja-content">
+                      Yogyakarta
+                    </button>
                   </li>
-                  <!-- <li class="nav-item d-inline-block">
-                    <a class="nav-link px-3 rounded surabaya" id="surabaya" data-bs-toggle="pill" href="#surabayas"
-                      role="tab" aria-controls="surabayas" aria-selected="false">
-                      Surabaya
-                    </a>
-                  </li> -->
+                  <li class="nav-item d-inline-block">
+                    <button type="button" class="nav-link px-3 rounded custom-price-button" id="action-class" role="tab"
+                      data-target="first-class-jakarta-content">
+                      Jakarta, Tangsel atau Surabaya
+                    </button>
+                  </li>
                 </ul>
               </div>
-
             </div>
           </div>
 
-          <div class="col-lg-7 g-0 offset-lg-1">
+          <div class="col-lg-7 g-0 offset-lg-1" data-aos="fade-up">
             <div class="tab-content" id="pills-tabContent">
-              <!-- <div class="tab-pane fade active show" id="jogjas" role="tabpanel" aria-labelledby="jogja">
+              <!-- First Class : Yogyakarta -->
+              <div class="tab-pane custom-price-content fade active show" id="first-class-jogja-content"
+                role="tabpanel">
                 <div class="row g-0 align-items-center">
                   <div class="col-lg-6">
                     <div class="pricing-box active bg-white rounded mt-4">
                       <div class="pricing-badge">
-                        <span class="badge">Jogja</span>
+                        <span class="badge">Best Buy</span>
                       </div>
 
-                      <h5 class="fw-normal">First Class : Jogja / Solo </h5>
-                      <h1 class="pricing-title mt-3 mb-0">IDR 1.579.000
+                      <h5 class="fw-normal">First Class : Yogyakarta </h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 1.979.000
                         <span class="f-13"> <strike>IDR 3.000.000</strike></span>
                       </h1>
                       <p class="text-muted f-15 mt-3">Fokus pembelajaran: bisa bicara tanpa
@@ -733,264 +732,162 @@
                         didalam berbicara</p>
                       <hr class="mt-4">
                       <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Garansi mengulang kelas
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> 2 Bulan*
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>7 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Minimal peserta <b>3 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Garansi mengulang kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> <b>10x pertemuan:</b> 2 Bulan*</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Maksimal peserta <b>7 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Minimal peserta <b>3 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Durasi kelas <b>90 menit</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat Certificate</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Bisa <b>DP dan Dicicil</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Gratis <b>webinar</b> setiap bulan</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> E-book & E-module</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Komunitas alumni</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Jumlah peserta sedikit</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Evaluasi tiap sesi</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Ada WAG support</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Ada reminder kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat <b>materi</b> setiap minggu</p>
+
+                        <p class="mb-1 f-14" style="color:#888;">
+                          <i>Catatan: Harga bisa berubah. Tersedia juga kelas
+                            <b>PRIVATE</b>.</i>
                         </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
-                        <a href="#contact" class="btn btn-green w-100 title-change-registration">Daftar Sekarang</a>
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Tanya Admin</a>
+                        <a data-program="First Class : Yogyakarta" class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a onclick="askAdminMessage(this)" data-program="First Class : Yogyakarta"
+                          class="btn btn-primary w-100 title-change-consultation">Tanya
+                          Admin</a>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-6">
                     <div class="pricing-box bg-white rounded mt-4">
-                      <h5 class="fw-normal">First Private : Jogja / Solo</h5>
-                      <h1 class="pricing-title mt-3 mb-0">IDR 2.579.000
-                        <span class="f-13"> <strike>IDR 10.000.000</strike></span>
-                      </h1>
-                      <p class="text-muted f-15 mt-3">Seperti First Class namun jumlah
-                        pertemuannya hanya 10x, materi
-                        hanya terfokus ke body language, tidak sampai kepada konten pembicaraan
-                      </p>
-                      <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Waktu flexible
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> hingga selesai
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>1-3 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
-                        </p>
-                      </div>
-                      <div class="mt-4 pt-2 text-center">
-                        <a href="#contact" class="btn btn-green w-100 title-change-registration">Daftar Sekarang</a>
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Tanya Admin</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <div class="tab-pane fade active show" id="tangsels" role="tabpanel" aria-labelledby="tangsel">
-                <div class="row g-0 align-items-center">
-                  <div class="col-lg-6">
-                    <div class="pricing-box active bg-white rounded mt-4">
-                      <div class="pricing-badge">
-                        <span class="badge">Tangerang</span>
-                      </div>
-
-                      <h5 class="fw-normal">First Class : Tangsel</h5>
+                      <h5 class="fw-normal">First Private : Yogyakarta</h5>
                       <h1 class="pricing-title mt-3 mb-0">IDR 2.579.000
                         <span class="f-13"> <strike>IDR 5.000.000</strike></span>
                       </h1>
-                      <p class="text-muted f-15 mt-3">Fokus pembelajaran: bisa bicara tanpa
-                        persiapan dan teratur
-                        didalam berbicara</p>
-                      <hr class="mt-4">
-                      <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Garansi mengulang kelas
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> 2 Bulan*
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>7 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Minimal peserta <b>3 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
-                        </p>
-                      </div>
-                      <div class="mt-4 pt-2 text-center">
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Daftar Sekarang</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="pricing-box bg-white rounded mt-4">
-                      <h5 class="fw-normal">First Private : Tangsel</h5>
-                      <h1 class="pricing-title mt-3 mb-0">IDR 3.579.000
-                        <span class="f-13"> <strike>IDR 7.000.000</strike></span>
-                      </h1>
-                      <p class="text-muted f-15 mt-3">Seperti First Class namun jumlah
-                        pertemuannya hanya 10x, materi
+                      <p class="text-muted f-15 mt-3">Seperti First Class dengan jumlah 10x
+                        pertemuan, materi
                         hanya terfokus ke body language, tidak sampai kepada konten pembicaraan
                       </p>
                       <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Waktu flexible
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Garansi mengulang kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Waktu flexible</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> <b>10x pertemuan:</b> hingga selesai
                         </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> hingga selesai
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>1-2 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
-                        </p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Maksimal peserta <b>1-3 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Durasi kelas <b>90 menit</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat Certificate</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Bisa <b>DP dan Dicicil</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Gratis <b>webinar</b> setiap bulan</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat <b>materi</b> setiap minggu</p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
-
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Daftar Sekarang</a>
+                        <a data-program="First Private : Yogyakarta"
+                          class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a onclick="askAdminMessage(this)" data-program="First Private : Yogyakarta"
+                          class="btn btn-primary w-100 title-change-consultation">Tanya
+                          Admin</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- <div class="tab-pane fade" id="surabayas" role="tabpanel" aria-labelledby="surabaya">
+              <!-- First Class : Jakarta, Tangsel atau Surabaya -->
+              <div class="tab-pane custom-price-content fade" id="first-class-jakarta-content" role="tabpanel">
                 <div class="row g-0 align-items-center">
                   <div class="col-lg-6">
                     <div class="pricing-box active bg-white rounded mt-4">
                       <div class="pricing-badge">
-                        <span class="badge">Surabaya</span>
+                        <span class="badge">Best Buy</span>
                       </div>
 
-                      <h5 class="fw-normal">First Class / Surabaya</h5>
-                      <h1 class="pricing-title mt-3 mb-0">IDR 3.579.000
-                        <span class="f-13"> <strike>IDR 7.000.000</strike></span>
+                      <h5 class="fw-normal">First Class : Jakarta, Tangsel & Surabaya</h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 2.579.000
+                        <span class="f-13"> <strike>IDR 3.000.000</strike></span>
                       </h1>
                       <p class="text-muted f-15 mt-3">Fokus pembelajaran: bisa bicara tanpa
                         persiapan dan teratur
                         didalam berbicara</p>
                       <hr class="mt-4">
                       <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Garansi mengulang kelas
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> 2 Bulan*
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>7 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Minimal peserta <b>3 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Garansi mengulang kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> <b>10x pertemuan:</b> 2 Bulan*</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Maksimal peserta <b>7 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Minimal peserta <b>3 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Durasi kelas <b>90 menit</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat Certificate</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Bisa <b>DP dan Dicicil</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Gratis <b>webinar</b> setiap bulan</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> E-book & E-module</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Komunitas alumni</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Jumlah peserta sedikit</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Evaluasi tiap sesi</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Ada WAG support</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Ada reminder kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat <b>materi</b> setiap minggu</p>
+
+                        <p class="mb-1 f-14" style="color:#888;">
+                          <i>Catatan: Harga bisa berubah. Tersedia juga kelas
+                            <b>PRIVATE</b>.</i>
                         </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
-                        <a href="#contact" class="btn btn-green w-100 title-change-registration">Daftar Sekarang</a>
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Tanya Admin</a>
+                        <a data-program="First Class : Jakarta, Tangsel atau Surabaya"
+                          class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a onclick="askAdminMessage(this)" data-program="First Class : Jakarta, Tangsel atau Surabaya"
+                          class="btn btn-primary w-100 title-change-consultation">Tanya
+                          Admin</a>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-6">
                     <div class="pricing-box bg-white rounded mt-4">
-                      <h5 class="fw-normal">First Private / Surabaya</h5>
-                      <h1 class="pricing-title mt-3 mb-0">IDR 4.579.000
-                        <span class="f-13"> <strike>IDR 10.000.000</strike></span>
+                      <h5 class="fw-normal">First Private : Jakarta, Tangsel & Surabaya</h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 3.579.000
+                        <span class="f-13"> <strike>IDR 5.000.000</strike></span>
                       </h1>
-                      <p class="text-muted f-15 mt-3">Seperti First Class namun jumlah
-                        pertemuannya hanya 10x, materi
+                      <p class="text-muted f-15 mt-3">Seperti First Class dengan jumlah 10x
+                        pertemuan, materi
                         hanya terfokus ke body language, tidak sampai kepada konten pembicaraan
                       </p>
                       <div class="mt-4 pt-1">
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Waktu flexible
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Garansi mengulang kelas</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Waktu flexible</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> <b>10x pertemuan:</b> hingga selesai
                         </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          <b>10x pertemuan:</b> hingga selesai
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Maksimal peserta <b>1-3 orang</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Durasi kelas <b>90 menit</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-check-circle'></i>
-                          Dapat Certificate
-                        </p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Maksimal peserta <b>1-3 orang</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Durasi kelas <b>90 menit</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat Certificate</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Bisa <b>DP dan Dicicil</b></p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Gratis <b>webinar</b> setiap bulan</p>
+                        <p class="mb-3 f-16"><i class='bx bxs-check-circle'></i> Dapat <b>materi</b> setiap minggu</p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
-                        <a href="#contact" class="btn btn-green w-100 title-change-registration">Daftar Sekarang</a>
-                        <a href="#contact" class="btn btn-primary w-100 title-change-consultation">Tanya Admin</a>
+                        <a data-program="First Private : Jakarta, Tangsel atau Surabaya"
+                          class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a onclick="askAdminMessage(this)" data-program="First Private : Jakarta, Tangsel atau Surabaya"
+                          class="btn btn-primary w-100 title-change-consultation">Tanya
+                          Admin</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div> -->
-
-
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Pricing -->
+    </section>
+    <!-- End Pricing -->
 
     <!-- Contact Section - Home Page -->
     <section id="contact" class="contact-append section-bg">
@@ -1475,6 +1372,7 @@
   <script src="assets/js/whatsapp.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/textchange.js"></script>
+  <script src="assets/part/pricing/switch-price.js"></script>
 </body>
 
 </html>

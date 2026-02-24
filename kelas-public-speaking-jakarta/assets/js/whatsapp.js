@@ -3,7 +3,7 @@ function sendWhatsAppMessage(button) {
   var walink = "https://web.whatsapp.com/send",
     phone = "6285162992597",
     walink2 = "Salam Hangat, Saya melihat *Website dialogika.co* dan saya tertarik untuk tahu lebih lanjut mengenai.",
-    program = button.getAttribute("data-program"); 
+    program = button.getAttribute("data-program");
 
   // Smartphone Support
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -13,6 +13,26 @@ function sendWhatsAppMessage(button) {
   // Final WhatsApp Message
   var blanter_whatsapp =
     walink + "?phone=" + phone + "&text=" + walink2 + "%0A%0A" + "*Program Jakarta* : " + program;
+
+  // Open WhatsApp
+  window.open(blanter_whatsapp, "_blank");
+}
+
+function askAdminMessage(button) {
+  // WhatsApp Settings
+  var walink = "https://web.whatsapp.com/send",
+    phone = "6285162992597",
+    walink2 = "Salam Hangat, Saya melihat *Website dialogika.co* dan saya ingin bertanya mengenai program.",
+    program = button.getAttribute("data-program");
+
+  // Smartphone Support
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    walink = "whatsapp://send";
+  }
+
+  // Final WhatsApp Message
+  var blanter_whatsapp =
+    walink + "?phone=" + phone + "&text=" + walink2 + "%0A%0A" + "*Tanya Program* : " + program;
 
   // Open WhatsApp
   window.open(blanter_whatsapp, "_blank");
